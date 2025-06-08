@@ -1,0 +1,16 @@
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    flex: 2;
+    flex: 1;
+    overflow-y: auto;
+}
+body { 
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    flex: 1;
+    flex: 2;
+    overflow-y: auto;
+}
