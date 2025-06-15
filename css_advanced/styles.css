@@ -1,0 +1,420 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    color: #071629;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn-primary {
+    background: #C271FF;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 22px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #9b4dda;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+    padding: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 1;
+}
+
+/* Hero Section */
+.hero {
+    background: #071629;
+    color: white;
+    text-align: center;
+    padding: 1440px 0 150px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../css_advanced/Image/Object.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero span {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    opacity: 0.8;
+}
+
+.hero button {
+    margin-top: 40px;
+    background: white;
+    color: #C271FF;
+}
+
+.hero button:hover {
+    background: #f0f0f0;
+}
+
+/* Pros Section */
+.pros {
+    text-align: center;
+    padding: 80px 0;
+    margin-top: -80px;
+}
+
+.pros h2 {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.pros-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pro {
+    flex: 1;
+    min-width: 200px;
+}
+
+.pro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.pro h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.pro p {
+    font-size: 14px;
+    color: #071629;
+    opacity: 0.5;
+    font-style: italic;
+}
+
+/* Quote Section */
+.quote {
+    background: #C271FF;
+    color: white;
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.quote-img {
+    flex: 1;
+}
+
+.quote-img img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.quote-text {
+    flex: 2;
+}
+
+.quote-text blockquote {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.quote-text h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.quote-text p {
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* Tutorials Section */
+.tutorials {
+    padding: 100px 0;
+}
+
+.tutorials h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.tutorials-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.tutorial {
+    flex: 1;
+    min-width: 250px;
+}
+
+.tutorial-video {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.tutorial-video img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+}
+
+.tutorial h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.tutorial p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #071629;
+    opacity: 0.5;
+}
+
+.tutor {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.tutor img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.tutor h4 {
+    font-size: 14px;
+    color: #C271FF;
+}
+
+.rating {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.rating i {
+    color: #C271FF;
+    font-size: 12px;
+}
+
+.duration {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #C271FF;
+    opacity: 0.5;
+}
+
+/* Membership Section */
+.membership {
+    background: #071629;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.membership h2 {
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.benefit {
+    flex: 1;
+    min-width: 200px;
+}
+
+.benefit img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.benefit h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 100px 0;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 60px;
+}
+
+.faq-container {
+    display: flex;
+    gap: 50px;
+}
+
+.faq-column {
+    flex: 1;
+}
+
+.faq-item {
+    margin-bottom: 40px;
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.faq-item p {
+    font-size: 14px;
+    opacity: 0.7;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    background: #071629;
+    color: white;
+    padding: 50px 0;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    gap: 30px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.social-icons i:hover {
+    opacity: 1;
+}
+
+.copyright {
+    opacity: 0.4;
+    font-size: 12px;
+}
